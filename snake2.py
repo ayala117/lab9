@@ -41,7 +41,7 @@ food_image = food_image_1
 food_spawn_time = pygame.time.get_ticks()
 
 def generate_food():
-    """Generates food at a random position with random weight."""
+    
     global food_value, food_image, food_spawn_time
     while True:
         new_food = (
@@ -65,7 +65,7 @@ food_per_level = 3
 font = pygame.font.Font(None, 36)
 
 def check_collision(head):
-    """Checks if the snake collides with itself or the walls."""
+    
     return (
         head in snake or 
         head[0] < 0 or head[1] < 0 or 
